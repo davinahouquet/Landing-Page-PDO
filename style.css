@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(77, 77, 77);
+}
+/*-----Section 6 : Pricing ----------------------------------------*/
+.pricing-section{
+    height: auto;
+}
+
+/*Contient titre + text + pricing packs*/
+.pricing-container{
+    background-color: rgb(234, 234, 234);
+    height: auto;
+}
+
+/*Contient titre et texte de la partie "Our Pricing"*/
+.pricing-packs-title-text{
+    width: 30%;
+    margin: 0 auto;
+}
+
+
+/*Titre de la partie "Our Pricing"*/
+.pricing-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+/*Texte de la partie "Our Pricing"*/
+.pricing-text{
+    text-align: center;
+    color: rgb(121, 121, 121);
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+/*Contient toutes les pricing packs*/
+.pricing-packs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Pricing pack en lui-même*/
+.pricing-pack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 0;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(121, 121, 121);
+    transition: 0.7s;
+    position: relative;
+}
+
+.pricing-pack:hover{
+    transform: translateY(-20px);
+    transition: 0.7s;
+    box-shadow: 0px 20px 15px rgb(77, 77, 77);
+}
+
+/*Contient type advanced + promo*/
+.advanced-type-promo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* position: relative; */
+}
+
+/*Promo sur le pack Advanced*/
+.promo-pricing-pack{
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: #2a7cd3;
+    color: white;
+    border-radius: 0 10px 0 10px;;
+    
+}
+
+/*Nom du pack*/
+.pack-type{
+    padding-top: 25px;
+}
+
+/*Contient le dollar + int + /mois*/
+.pack-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+/*Symbole du dollar $*/
+.dollar{
+    color: rgb(47, 117, 173);
+}
+
+/*Prix en int*/
+.price{
+    color: rgb(47, 117, 173);
+    font-size: 45px;
+    font-weight: 300;
+    margin:0;
+}
+
+/*---Listes---*/
+.lists-options{
+    width: 259px;
+    margin-bottom: 15px;
+    padding: 0;
+    margin-left: 0;
+}
+
+ul{
+    padding: 0;
+    text-align: left;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+}
+/*Première liste avec noms des options*/
+.options{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#check{
+    margin-right: 2px;
+    color: green;
+}
+
+#check-red{
+    margin-right: 2px;
+    color: red;
+}
+
+.pricing-pack-button{
+    text-align: center;
+    background-color: #2a7cd3;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 30px;
+}
