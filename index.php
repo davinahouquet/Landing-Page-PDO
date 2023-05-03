@@ -18,7 +18,7 @@
             <div class="pricing-container">
 
                 <div class="pricing-packs-title-text">
-                    <h3 class="pricing-title">Our Pricing</h3>
+                    <h3 class="pricing-title">Our Pricing</h3
                     <p class="pricing-text">It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
                 </div>
 
@@ -26,70 +26,34 @@
                     <?php
                     
                     foreach(getAll() as $pricing){
-                        echo "<p>Nom :".$pricing['name']."</p>";
+
+                        echo '<div class="pricing-pack">
+                                <p class="pack-type"><p>'.$pricing['name'].'</p>
+                                    <div class="pack-price">
+                                        <sup class="dollar">$</sup>
+                                        <p class="price">'.$pricing['price'].'</p>
+                                        <span>/month</span>
+                            </div>
+                            <div class="lists-options">
+                                <ul class="options">
+                                    <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p>'.$pricing['bandwidth_gb'].'</p></li>
+                                    <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p>'.$pricing['onlinespace_mb'].'</p></li>
+                                    <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Support:No</div><p>'.$pricing['support_no'].'</p></li>
+                                    <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>'.$pricing['domain'].'</p></li>
+                                    <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Hidden Fees</div><p>'.$pricing['hidden_fees'].'</p></li>
+                                </ul>
+                            </div>
+                            <button class="pricing-pack-button"><a href="#">Join Now</a></button>';
+
                     }
                     
 
                     ?>
-                    <div class="pricing-pack">
-                        <p class="pack-type"></p>
-                        <div class="pack-price">
-                            <sup class="dollar">$</sup>
-                            <p class="price"></p>
-                            <span>/month</span>
-                        </div>
-                        <div class="lists-options">
-                            <ul class="options">
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p></p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p><</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Support:No</div><p></p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>/p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Hidden Fees</div><p></p></li>
-                            </ul>
-                        </div>
-                        <button class="pricing-pack-button"><a href="#">Join Now</a></button>
-                    <div class="pricing-pack">
-                        <div class="advanced-type-promo">
-                        <p class="pack-type">Advanced</p>
-                        <div class="promo-pricing-pack">20% sale</div></div>
-                        <div class="pack-price">
-                            <sup class="dollar">$</sup>
-                            <p class="price">29</p>
-                            <span>/month</span>
-                        </div>
-                        <div class="lists-options">
-                            <ul class="options">
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p>2GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p>1GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Support:No</div><p>Yes</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>3</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Hidden Fees</div><p>No</p></li>
-                            </ul>
-                        </div>
-                        <button class="pricing-pack-button"><a href="#">Join Now</a></button>
-                    </div>
-                    <div class="pricing-pack">
-                        <p class="pack-type">Professional</p>
-                        <div class="pack-price">
-                            <sup class="dollar">$</sup>
-                            <p class="price">29</p>
-                            <span>/month</span>
-                        </div>
-                        <div class="lists-options">
-                            <ul class="options">
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p>3GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p>2GB</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Support:No</div><p>Yes</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>Unlimited</p></li>
-                                <li><div><i class="fa-regular fa-circle-check" id="check"></i>Hidden Fees</div><p>No</p></li>
-                            </ul>
-                        </div>
-                        <button class="pricing-pack-button"><a href="#">Join Now</a></button>
-                    </div>
+                  
                 </div>
             </div>
         
-        </div>
+
     </section>
 </body>
 </html>
