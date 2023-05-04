@@ -220,31 +220,47 @@ li{
 
 /*Dans le foreach, contient les options*/
 .update-container{
-    width: 350px;
-    height: auto;
-    padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    border-radius: 10px;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    padding: 40px;
     background-color: #ffffff;
+    border-radius: 10px;
     box-shadow: 0px 10px 10px rgb(121, 121, 121);
 }
 
 .update-pricing-row{
-display: flex;
-flex-direction: row;
-
+    display: flex;
+    flex-direction: row;
 }
 /*Toutes les options*/
 .update{
-    width: 150px;
     display:flex;
     flex-direction: column;
+    width: 150px;
     margin: 10px;
 }
 
 input{
     width: 130px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+/*Button update*/
+.update-pricing-button{
+    height: 50px;
+    text-align: center;
+    background-color: #2a7cd3;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left: 130px;
+    padding-right: 127px;
+    margin: 10px;
 }

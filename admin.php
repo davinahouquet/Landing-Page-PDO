@@ -23,21 +23,22 @@
                 <form>
                     <div class="pricing-pack-update">
                         <div class="update-pricing-row">
-                            <div class="update">Name<input></div>
-                            <div class="update">Price<input></div>
+                            <div class="update">Name<input type="text"></div>
+                            <div class="update">Price<input type="number"></div>
                         </div>
                         <div class="update-pricing-row">
-                            <div class="update">Sale<input></div>
-                            <div class="update">Bandwidth<input></div>
+                            <div class="update">Sale<input type="number"></div>
+                            <div class="update">Bandwidth<input type="number"></div>
                         </div>
                         <div class="update-pricing-row">
-                            <div class="update">OnlineSpace<input></div>
-                            <div class="update">Support<input></div>
+                            <div class="update">OnlineSpace<input type="number"></div>
+                            <div class="update">Support<input type="text"></div>
                         </div>
                         <div class="update-pricing-row">
-                            <div class="update">Domain<input></div>
-                            <div class="update">Hidden Fees<input></div>
+                            <div class="update">Domain<input type="number"></div>
+                            <div class="update">Hidden Fees<input type="text"></div>
                         </div>
+                        <button class="update-pricing-button">Update</button>
                     </div>
                 </form>
             </div>';            
