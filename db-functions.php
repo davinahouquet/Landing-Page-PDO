@@ -23,8 +23,5 @@ function getAll(){
     $pricing->execute();
     return $pricing->fetchAll();
 
-if($pricing['domain'] == null){
-    echo "Unlimited";
-}
 }
 ?>
