@@ -42,7 +42,7 @@
                                     <li><div><i class="fa-regular fa-circle-check" id="'.($pricing['support_no'] == 0 ? 'check-red' : 'check').'"></i>Support:No</div><p>'.($pricing['support_no'] == 0 ? 'No' : ($pricing['support_no'] == 1 ? 'Yes' : $pricing['support_no'])).'</p></li>
                                     <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>'.($pricing['domain'] ? $pricing['domain'] : 'Unlimited').'</p></li>
                                     <li><div><i class="fa-regular fa-circle-check" id="'.($pricing['hidden_fees'] == 0 ? 'check-red' : 'check').'"></i>Hidden Fees</div><p>'.($pricing['hidden_fees'] == 0 ? 'No' : $pricing['hidden_fees']).'</p></li>
-
+                                    <li><div class="sale-pricing-pack"><p>'.($pricing['sale'] == 0 ? '' : 'SALE '.$pricing['sale']).'</p></div></li>
                                 </ul>
                             </div>
                             <button class="pricing-pack-button"><a href="#">Join Now</a></button>
