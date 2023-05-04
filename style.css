@@ -26,10 +26,13 @@ a:hover{
 
 /*Contient titre et texte de la partie "Our Pricing"*/
 .pricing-packs-title-text{
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-
 
 /*Titre de la partie "Our Pricing"*/
 .pricing-title{
@@ -51,6 +54,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 /*Contient toutes les pricing packs*/

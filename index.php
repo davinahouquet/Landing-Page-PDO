@@ -40,18 +40,17 @@
                                     <li><div><i class="fa-regular fa-circle-check" id="check"></i>Bandwidth</div><p>'.$pricing['bandwidth_gb'].'</p></li>
                                     <li><div><i class="fa-regular fa-circle-check" id="check"></i>Onlinespace</div><p>'.$pricing['onlinespace_mb'].'</p></li>
                                     <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Support:No</div><p>'.$pricing['support_no'].'</p></li>
-                                    <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>'.$pricing['domain'].'</p></li>
+                                    <li><div><i class="fa-regular fa-circle-check" id="check"></i>Domain</div><p>'.($pricing['domain'] ? $pricing['domain'] : 'Unlimited').'</p></li>
                                     <li><div><i class="fa-regular fa-circle-check" id="check-red"></i>Hidden Fees</div><p>'.$pricing['hidden_fees'].'</p></li>
                                 </ul>
                             </div>
                             <button class="pricing-pack-button"><a href="#">Join Now</a></button>
                             </div>';
-
-                    }
-                    
+                    }                    
                     ?>
             </div>        
                   
+            
         
 
     </section>
