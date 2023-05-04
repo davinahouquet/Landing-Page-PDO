@@ -201,3 +201,50 @@ li{
     color: white;
     border-radius: 0 10px 0 10px;
 }
+
+/*------- Amdin.php ---------*/
+/*Titre de la section 'Update Pricing'*/
+.update-pricing-title{
+    text-align: center;
+    color: #2a7cd3;
+    font-size: 25px;
+}
+
+/*Contient la liste des options hors du foreach*/
+.update-container-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+/*Dans le foreach, contient les options*/
+.update-container{
+    width: 350px;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px rgb(121, 121, 121);
+}
+
+.update-pricing-row{
+display: flex;
+flex-direction: row;
+
+}
+/*Toutes les options*/
+.update{
+    width: 150px;
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+input{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+}
