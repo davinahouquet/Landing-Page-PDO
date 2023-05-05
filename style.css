@@ -265,3 +265,11 @@ input{
     margin: 10px;
     cursor: pointer;
 }
+
+.update-button{
+    background-color: #2a7cd3;
+}
+
+.get-back{
+    background-color: #2a7cd3;
+}

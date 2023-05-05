@@ -52,6 +52,7 @@ require('form-functions.php');
             }
         ?>
         </div>
+        <button class="get-back"><a href="http://localhost/Landing%20Page%20PDO/">Click here to get back</a></button>
     </section>
 </body>
 </html>
