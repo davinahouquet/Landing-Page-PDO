@@ -68,7 +68,7 @@
                 <?php
                     }
                     //Pour onlinespace: il faut insérer les données dans la BDD en unité MB sinon pas de conversion en GB              
-                    //support:no :operateur ternaire, si c'est égal à 1 = echo Yes, si égal à 0 = echo No https://stacklima.com/php-operateur-ternaire/#:~:text=op%C3%A9rateur%20ternaire%20%3A%20L'op%C3%A9rateur%20ternaire,code%20effectuant%20des%20op%C3%A9rations%20conditionnelles.
+                    //support:no :operateur ternaire, booleen : condition 1 (ici si c'est égal à 1 = echo Yes)? condition 2 (ici si égal à 0 = echo No) https://stacklima.com/php-operateur-ternaire/#:~:text=op%C3%A9rateur%20ternaire%20%3A%20L'op%C3%A9rateur%20ternaire,code%20effectuant%20des%20op%C3%A9rations%20conditionnelles.
                 ?>
             </div>        
                   

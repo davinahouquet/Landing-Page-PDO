@@ -1,7 +1,7 @@
 <?php
 //Créer une interface servant à mettre à jour les données de pricing depuis un fichier admin.php
 // Il faudra afficher un message de réussite ou d’erreur+
-
+ require('db-functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
                     // - pour valeur : les valeurs des champs du formulaire (valeur de l'attribut HMLT "value" pour un input, ...)
         ?>
                 <div class="update-container">
-                    <form action="./form-functions.php?id=<?$pricing['id_pricing']?>" method="POST">
+                    <form action="form-functions.php?id=<?=$pricing['id_pricing']?>" method="POST">
                         <div class="pricing-pack-update">
                             <div class="update-pricing-row">
                                 <div class="update">Name<input type="text" name="pricing-form-name" value="<?= $pricing["name"] ?>" /></div>
@@ -43,7 +43,7 @@
                                 <div class="update">Domain<input type="number" name="pricing-form-domain" value="<?=$pricing["domain"]?>"/></div>
                                 <div class="update">Hidden Fees<input type="text" name="pricing-form-hidden-fees" value="<?=$pricing["hidden_fees"]?>"/></div>
                             </div>
-                            <button type="submit" value="update" class="update-pricing-button">Update</button>
+                            <button type="submit" value="update" name="submit" class="update-pricing-button">Update</button>
                         </div>
                     </form>
                 </div>
