@@ -25,7 +25,7 @@
                     // - pour valeur : les valeurs des champs du formulaire (valeur de l'attribut HMLT "value" pour un input, ...)
         ?>
                 <div class="update-container">
-                    <form action="./form-functions.php" method="POST">
+                    <form action="./form-functions.php?id=<?$pricing['id_pricing']?>" method="POST">
                         <div class="pricing-pack-update">
                             <div class="update-pricing-row">
                                 <div class="update">Name<input type="text" name="pricing-form-name" value="<?= $pricing["name"] ?>" /></div>
