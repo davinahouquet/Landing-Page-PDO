@@ -1,7 +1,8 @@
 <?php
 //Créer une interface servant à mettre à jour les données de pricing depuis un fichier admin.php
 // Il faudra afficher un message de réussite ou d’erreur+
- require('db-functions.php');
+require('form-functions.php');
+
 ?>
 
 <!DOCTYPE html>

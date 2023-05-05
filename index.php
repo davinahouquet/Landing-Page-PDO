@@ -1,5 +1,5 @@
 <?php
-    require('db-functions.php');
+    require('form-functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -77,4 +77,3 @@
     </section>
 </body>
 </html>
-<?php include('admin.php') ?>

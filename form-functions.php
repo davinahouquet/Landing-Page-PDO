@@ -1,6 +1,5 @@
 <?php
-    
-   
+    require('db-functions.php');
 
 // si nous recevons des données d'un formulaire par POST
 if (isset($_POST) && isset($_POST["submit"])) {
@@ -31,7 +30,7 @@ if (isset($_POST) && isset($_POST["submit"])) {
             "id_pricing" => $id_pricing
         ];
         
-        $mysqli = connexion(); //Il faut pouvoir se connecter à la BDD (appel de la fonction qui est faote pour se connecter à la BDD dans db-functions). Essentielle sinon pas de lien
+        $mysqli = connexion();
         
         
         $mysqli = $mysqli->prepare(
@@ -45,7 +44,6 @@ if (isset($_POST) && isset($_POST["submit"])) {
             domain = :domain,
             hidden_fees = :hidden_fees 
             WHERE id_pricing = :id_pricing");
-
 
 // var_dump($_POST);
         // var_dump($name);die;
