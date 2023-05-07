@@ -265,7 +265,12 @@ input{
     margin: 10px;
     cursor: pointer;
 }
-
+.container-update-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .update-button{
     background-color: #2a7cd3;
 }

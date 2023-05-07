@@ -13,9 +13,11 @@ if (isset($_POST) && isset($_POST["submit"])) {
     $hidden_fees = filter_input(INPUT_POST, "pricing-form-hidden-fees", FILTER_SANITIZE_SPECIAL_CHARS);
     $sale = filter_input(INPUT_POST, "pricing-form-sale", FILTER_SANITIZE_SPECIAL_CHARS);
     $id_pricing = $_GET['id'];
+
     // "filtrer" (utiliser les FILTER) pour la sécurité, le nettoyage des données
     // Utilier uniquement les données filtrées, logique sinon ça sert à rien de les filtrer
     // rediriger (redirection) vers la bonne page, éventuellement en fonction des résultats (mais ici pour commencer, rediriger vers la même page (admin.php))
+    
     if($name !== false && $price !== false && $bandwidth !== false && $onlinespace !== false && $support !== false && $domain !== false && $hidden_fees !== false && $sale !== false){
 
         $pricing = [
@@ -27,12 +29,13 @@ if (isset($_POST) && isset($_POST["submit"])) {
             "domain" => $domain,
             "hidden_fees" => $hidden_fees,
             "sale" => $sale,
-            "id_pricing" => $id_pricing
+            "id_pricing" => $id_pricing,
+            "counter" => $counter,
         ];
         
         $mysqli = connexion();
         
-        
+        //Action d'update de la BDD sur les offres
         $mysqli = $mysqli->prepare(
             "UPDATE pricing 
             SET name = :name,
@@ -42,11 +45,10 @@ if (isset($_POST) && isset($_POST["submit"])) {
             onlinespace_mb = :onlinespace_mb,
             support_no = :support_no,
             domain = :domain,
-            hidden_fees = :hidden_fees 
+            hidden_fees = :hidden_fees,
+            counter = :counter 
             WHERE id_pricing = :id_pricing");
 
-// var_dump($_POST);
-        // var_dump($name);die;
         
         $mysqli->execute([
             "name" => $name,
@@ -57,13 +59,16 @@ if (isset($_POST) && isset($_POST["submit"])) {
             "support_no" => $support,
             "domain" => $domain,
             "hidden_fees" => $hidden_fees,
-            "id_pricing" => $id_pricing
+            "id_pricing" => $id_pricing,
+            "counter" => $counter
         ]);
         
-        // echo 'test';die;
 
         header("Location:admin.php");
     }
-       
+    
 }
+//https://www.php.net/manual/fr/reserved.variables.get.php
+
+//Incrémenter le champ counter de la BDD quand on clique sur Join
 ?>

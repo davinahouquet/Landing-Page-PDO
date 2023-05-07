@@ -25,5 +25,9 @@ function getAllPricings(){
 
 }
 
+if(isset($_GET["action"])){
+    $db1 = connexion();
+    $sqlQuery1 = 
+}
 ?>
 
